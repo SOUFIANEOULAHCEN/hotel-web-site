@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+.sp{
+    color: green;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 28px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(rgb(11, 11, 11),rgb(17, 17, 17));
+}
+
+nav .logo {
+    width:80px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+nav ul li:hover:after {
+    width: 100%;
+}
+.one {
+  background-color: rgb(255, 255, 254); 
+  height: 700px;
+  padding: 100px;
+
+}
+.bg-img{
+    object-fit: cover;
+    position: absolute;
+    filter: brightness(1);
+}
+.one h1{
+    font-size: 40px;
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+    color: orangered;
+    font-weight: 700;
+}
+span{
+    color: orangered;
+}
+.two h1{
+    font-size: 40px;
+    text-align: center;
+    font-family:cursive ;
+    font-style: italic;
+    color: green;
+    font-weight: 700;
+
+}
+.tree h2{
+    font-size: 20px;
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+    color: rgb(25, 94, 25);
+    font-weight: 700;
+    
+}
+.five{
+    min-height: 100px;
+}
+button{
+
+    margin-left:510px;
+    font-size: 10px;
+    font-family: "rubik","sans-serif";
+    border-radius: 30%;
+    padding: 10px;
+    background-color: orangered;
+
+
+    
+}
+button a{
+    text-decoration: none;
+    color: black;
+
+}
+button:hover{
+    font-size: 15px;
+    font-family: "rubik","sans-serif";
+    border-radius: 30%;
+    padding: 13px;
+    background-color: rgb(99, 153, 99);
+
+
+}
+@media only screen and (max-width: 430px) and (min-width: 360px) {
+    *{
+        width: auto;
+        
+    }
+    
+
+    .one {
+        padding: 50px;
+        margin-top: 70px;
+    }
+
+    .bg-img {
+
+        
+        height: 300px;
+        width:auto;
+        filter: brightness(1);
+        padding-right: 300px;
+    }
+
+    .one h1 {
+        font-size: 50px;
+        margin-left: 10px;
+    }
+
+    .two h1 {
+        font-size: 30px;
+    }
+
+    .tree h2 {
+        font-size: 13px;
+    }
+
+    button {
+        margin-left: 5%;
+        font-size: 12px;
+        border-radius: 20%;
+        padding: 8px;
+        margin-left: 170px;
+    }
+
+    button:hover {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
