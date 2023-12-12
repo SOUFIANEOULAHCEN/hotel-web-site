@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --pip1: #F0F3FA;
   --pip2: #d5deef80;
@@ -12,11 +6,18 @@
   --pip5: #003554;
   --pip6: #022B42;
   --pip7: #032030;
-  --pip7-1:#0035547b;
+  --pip7-1:#032030ac;
   --dark: #5b5a5b;
   --exDark: #2b2b2b;
 
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 
 html {
   scroll-behavior: smooth;
@@ -50,43 +51,42 @@ body::-webkit-scrollbar {
   height: 100vh;
   background-image: linear-gradient(rgba(3, 32, 48, 0.662), rgba(0, 53, 84, 0.674)100%);
   background-size: cover;
-  
   position: relative;
   padding: 0 5%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .sidebar {
   position: fixed;
-  top: 10px;
+  top: 0;
   left: 0;
-  width: 60px;
-  height: 70px;
+  width: 100%;
+  height:70px;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
-  background: var(--pip7-1);
-  backdrop-filter: blur(17px);
-  border-right: 1px solid var(--pip2);
+  background: #032030ac;
+  backdrop-filter: blur(20px);
+  border-right: 1px solid #d5deef80;
   transition: 0.3s ease;
-  border-radius: 0px 99px 99px 0px;
+  /* border-radius: 0px 99px 99px 0px; */
   z-index: 100;
-  color: var(--pip7);
+  color:#F0F3FA;
 }
 
-.sidebar:hover {
+/* .sidebar:hover {
   border-radius: 0;
   height: 100px;
   width: 100%;
-}
+} */
 
 .sidebar .logo {
   color: #ffffff;
   display: flex;
   align-items: center;
-  padding: 5px 10px 5px;
+  padding: 5px 30px 5px;
 }
 
 .logo img {
@@ -110,18 +110,19 @@ body::-webkit-scrollbar {
   display: flex;
   border-radius: 4px;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+  margin: 0 5px;
 }
 
 .links li:hover {
   cursor: pointer;
-  background: var(--pip3)
+  background: #006DA4;
 }
 
 .links h4 {
-  color: var(--pip1);
+  color: #F0F3FA;
   font-weight: 500;
-  display: none;
+  /* display: none; */
 }
 
 .sidebar:hover .links h4 {
@@ -138,26 +139,30 @@ body::-webkit-scrollbar {
 }
 
 .links li i {
-  padding: 20px 10px;
-  display: none;
+  padding: 1px 10px;
+  /* display: none; */
 }
 
 .links li a {
   padding: 10px;
-  color: var(--pip1);
-  display: none;
+  color: #F0F3FA;
+  /* display: none; */
   font-weight: 500;
   white-space: nowrap;
   text-decoration: none;
 }
+.active{
+  background: #006DA4;
+  
+}
 
-.sidebar:hover .links li i {
+/* .sidebar:hover .links li i {
   display: block;
 }
 
 .sidebar:hover .links li a {
   display: block;
-}
+} */
 
 .content {
   text-align: center;
